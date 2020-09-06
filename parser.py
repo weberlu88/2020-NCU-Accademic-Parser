@@ -23,7 +23,7 @@ courses = table.find_all('tr', {"class":"list1"})
 # 輸出成csv
 path = '所有課程.csv'
 with open(path, 'w', encoding="utf-8") as file:
-    
+
     file.writelines(['課號','課名','成績'])
     for course in courses:
         content = course.select('td')
@@ -31,5 +31,5 @@ with open(path, 'w', encoding="utf-8") as file:
         name  = ''.join(content[2].text.split(' ')[1:])
         score = content[-1].text
 
-        line = "{},{},{}\n".format(_id, name, int(score))
+        line = "{},{},{}\n".format(_id, name, score)
         file.writelines(line)
