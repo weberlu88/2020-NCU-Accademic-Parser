@@ -1,0 +1,19 @@
+function resize_iframe() {
+    var pageWidth = window.innerWidth, pageHeight = window.innerHeight;
+
+    if (typeof pageWidth != "number") {
+        if (document.compatMode == "CSS1Compat") {
+            pageWidth = document.documentElement.clientWidth;
+            pageHeight = document.documentElement.clientHeight;
+        } else {
+            pageWidth = document.body.clientWidth;
+            pageHeight = document.body.clientHeight;
+        }
+    }
+
+    document.getElementById("portalFrame").style.height = parseInt(pageHeight - 70)+"px";//resize the iframe according to the size of the window
+    document.getElementById("portalFrame").style.width = parseInt(pageWidth - 1)+"px";
+}
+
+window.onresize = resize_iframe;
+document.addEventListener('DOMContentLoaded', resize_iframe, false);

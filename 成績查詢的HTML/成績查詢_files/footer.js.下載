@@ -1,0 +1,12 @@
+function timeout_logout() {
+    window.location.replace("/timeout");
+}
+
+var timeoutVar = setTimeout(timeout_logout, 10900000);
+
+function set_or_reset_timeout(seconds) {
+    clearTimeout(timeoutVar);
+    timeoutVar = setTimeout(timeout_logout, seconds * 1000);
+}
+
+

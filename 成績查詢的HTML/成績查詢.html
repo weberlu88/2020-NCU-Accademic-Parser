@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)https://portal.ncu.edu.tw/system/162?token=tMD2Xsdn2JfhERgACvnvMGXg -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+	<link rel="shortcut icon" href="https://portal.ncu.edu.tw/resources/images/favicon.ico" type="image/x-icon">
+    
+    
+    <title>中央大學入口網站</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://portal.ncu.edu.tw/resources/images/favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="./成績查詢_files/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="./成績查詢_files/custom.css">
+    <link rel="stylesheet" href="./成績查詢_files/bootstrap-glyphicons.min.css">
+    <link rel="stylesheet" href="./成績查詢_files/all.min.css">
+    
+      
+      
+        <link rel="stylesheet" href="./成績查詢_files/multilevel.css">
+      
+    
+    <meta name="_csrf" content="87443eef-8729-4baa-be72-3b7105b25ef3">
+    <meta name="_csrf_header" content="X-XSRF-TOKEN">
+    <script type="text/javascript">
+/*<![CDATA[*/
+function NCUCC_CommonLib(contextPath) {
+    this.contextPath = contextPath;
+}
+NCUCC_CommonLib.prototype.csrf_header = function() {
+    var csrfName = $('meta[name="_csrf_header"]').attr('content');
+    var csrfContent = $('meta[name="_csrf"]').attr('content');
+    var header = {};
+    header[csrfName] = csrfContent;
+    return header;
+};
+NCUCC_CommonLib.prototype.get = function(relativePath, data, callback) { this.doMethod(relativePath, 'GET', data, callback); };
+NCUCC_CommonLib.prototype.put = function(relativePath, data, callback) { this.doMethod(relativePath, 'PUT', data, callback); };
+NCUCC_CommonLib.prototype.post = function(relativePath, data, callback) { this.doMethod(relativePath, 'POST', data, callback); };
+NCUCC_CommonLib.prototype.patch = function(relativePath, data, callback) { this.doMethod(relativePath, 'PATCH', data, callback); };
+NCUCC_CommonLib.prototype.delete = function(relativePath, data, callback) { this.doMethod(relativePath, 'DELETE', data, callback); };
+
+NCUCC_CommonLib.prototype.doMethod = function(relativePath, method, data, callback) {
+    if (typeof(data) === 'function') {
+        callback = data;
+        data = null;
+    }
+
+    var options = {
+        url: this.contextPath + relativePath,
+        dataType: 'json',
+        method: method,
+        timeout: 5000,
+        success: function (response) {
+            callback(null, response);
+        },
+        error: function(XMLHttpRequest, textStatus, errorThrown) {
+            callback('error');
+        },
+        statusCode: {
+            403: function() {
+                callback(403);
+            },
+            404: function() {
+                callback(404);
+            }
+        }
+    };
+
+    if (method != 'GET') {
+        options['headers'] = this.csrf_header();
+
+        if (data != null) {
+            options['data'] = JSON.stringify(data);
+            options['contentType'] = "application/json; charset=utf-8";
+        }
+    } else if (data != null) {
+        options['data'] = data;
+    }
+
+    $.ajax(options);
+};
+var ncuCommonLib = new NCUCC_CommonLib("\/");
+/*]]>*/
+</script>
+  
+    <script type="text/javascript">
+    /*<![CDATA[*/
+
+    function MenuBackend() {
+    }
+
+    MenuBackend.prototype.retrieve = function(callback) {
+        ncuCommonLib.get('backends/menu', callback);
+    }
+
+    /*]]>*/
+</script>
+    <script src="./成績查詢_files/iframe.js.下載"></script>
+    <style type="text/css">
+        .portal-iframe {
+            border-style: none;
+            width: 100%;
+        }
+
+        @media print {
+            body * {
+                visibility: hidden;
+            }
+            .printable, .printable * {
+                visibility: visible;
+            }
+            .printable {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+        
+            
+            
+                
+    <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+        <div class="container">
+            <a href="https://portal.ncu.edu.tw/" class="navbar-brand"><span><img width="28" height="28" src="./成績查詢_files/NCU_logo_small.gif"></span> 中央大學入口網站</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul id="portal-menu" class="navbar-nav"><li class="nav-item dropdown"><a href="https://portal.ncu.edu.tw/system/162?token=tMD2Xsdn2JfhERgACvnvMGXg#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">便捷窗口 </a><ul aria-labelledby="dropdownMenu1" class="dropdown-menu border-0 shadow"><li><a href="https://portal.ncu.edu.tw/system/incu?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon fas fa-dice-d20"></i> &nbsp; 服務櫃台</a></li><li><a href="https://portal.ncu.edu.tw/system/194?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_blank" class="dropdown-item"><i class="icon far fa-window-restore"></i> &nbsp; 二代電子表單簽核系統</a></li><li><a href="https://portal.ncu.edu.tw/system/192?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_blank" class="dropdown-item"><i class="icon fas fa-exclamation-triangle"></i> &nbsp; 研究發展系統</a></li><li><a href="https://portal.ncu.edu.tw/system/activitysys?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_blank" class="dropdown-item"><i class="icon fas fa-umbrella-beach"></i> &nbsp; 活動報名系統</a></li><li><a href="https://portal.ncu.edu.tw/system/seminarsys?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_blank" class="dropdown-item"><i class="icon fab fa-dev"></i> &nbsp; 研討會系統</a></li><li><a href="https://portal.ncu.edu.tw/system/61?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_blank" class="dropdown-item"><i class="icon glyphicon glyphicon-print"></i> &nbsp; 學生事務票選</a></li><li><a href="https://portal.ncu.edu.tw/system/62?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon fas fa-eye-slash"></i> &nbsp; 問卷調查</a></li><li><a href="https://portal.ncu.edu.tw/system/63?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon far fa-calendar-alt"></i> &nbsp; 會議記錄</a></li><li><a href="https://portal.ncu.edu.tw/system/64?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon fab fa-yarn"></i> &nbsp; 研發資料庫</a></li><li><a href="https://portal.ncu.edu.tw/system/77?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon fas fa-user-graduate"></i> &nbsp; 畢業審核表</a></li><li><a href="https://portal.ncu.edu.tw/system/78?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_blank" class="dropdown-item"><i class="icon fas fa-users"></i> &nbsp; 教學評量填寫</a></li><li><a href="https://portal.ncu.edu.tw/system/59?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon far fa-calendar-alt"></i> &nbsp; 學期功課表</a></li><li><a href="https://portal.ncu.edu.tw/system/80?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon fas fa-first-aid"></i> &nbsp; 學生學籍成績</a></li><li><a href="https://portal.ncu.edu.tw/system/129?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_blank" class="dropdown-item"><i class="icon fas fa-envelope"></i> &nbsp; WebMail</a></li><li><a href="https://portal.ncu.edu.tw/system/82?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon fab fa-apple-pay"></i> &nbsp; 學費繳費單</a></li><li><a href="https://portal.ncu.edu.tw/system/66?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon far fa-check-square"></i> &nbsp; 學雜費繳款證明</a></li><li><a href="https://portal.ncu.edu.tw/system/56?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon fas fa-mug-hot"></i> &nbsp; 授權軟體</a></li><li><a href="https://portal.ncu.edu.tw/system/45?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon fas fa-eye"></i> &nbsp; 期中預警</a></li><li><a href="https://portal.ncu.edu.tw/system/37?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon fas fa-user-graduate"></i> &nbsp; 畢業審核系統</a></li></ul></li><li class="nav-item dropdown"><a href="https://portal.ncu.edu.tw/system/162?token=tMD2Xsdn2JfhERgACvnvMGXg#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">學生服務</a><ul aria-labelledby="dropdownMenu1" class="dropdown-menu border-0 shadow"><li class="dropdown-submenu"><a href="https://portal.ncu.edu.tw/system/22" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle"><i class="icon far fa-folder-open"></i> &nbsp; 學籍成績服務</a><ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow"><li><a href="https://portal.ncu.edu.tw/system/162?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon fas fa-scroll"></i> &nbsp; 成績查詢</a></li><li><a href="https://portal.ncu.edu.tw/system/77?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon fas fa-user-graduate"></i> &nbsp; 畢業審核表</a></li><li><a href="https://portal.ncu.edu.tw/system/90?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_blank" class="dropdown-item"><i class="icon fas fa-sort-numeric-down"></i> &nbsp; 學生學籍系統</a></li><li><a href="https://portal.ncu.edu.tw/system/32?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_blank" class="dropdown-item"><i class="icon far fa-sun"></i> &nbsp; 學生證掛失</a></li></ul></li><li class="dropdown-submenu"><a href="https://portal.ncu.edu.tw/system/23" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle"><i class="icon fas fa-check-circle"></i> &nbsp; 教務相關服務</a><ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow"><li><a href="https://portal.ncu.edu.tw/system/34?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon fas fa-asterisk"></i> &nbsp; 課務系統</a></li><li><a href="https://portal.ncu.edu.tw/system/35?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon fas fa-th-list"></i> &nbsp; 選課系統</a></li><li><a href="https://portal.ncu.edu.tw/system/37?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon fas fa-user-graduate"></i> &nbsp; 畢業審核系統</a></li><li><a href="https://portal.ncu.edu.tw/system/59?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon far fa-calendar-alt"></i> &nbsp; 學期功課表</a></li><li><a href="https://portal.ncu.edu.tw/system/ncueeclass?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_blank" class="dropdown-item"><i class="icon fas fa-atlas"></i> &nbsp; 新 ee-class 系統</a></li><li><a href="https://portal.ncu.edu.tw/system/133?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_blank" class="dropdown-item"><i class="icon fas fa-seedling"></i> &nbsp; LMS系統</a></li><li><a href="https://portal.ncu.edu.tw/system/170?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_blank" class="dropdown-item"><i class="icon fab fa-grav"></i> &nbsp; ee-class 系統</a></li><li><a href="https://portal.ncu.edu.tw/system/157?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon fas fa-share-square"></i> &nbsp; 畢業離校</a></li></ul></li><li class="dropdown-submenu"><a href="https://portal.ncu.edu.tw/system/24" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle"><i class="icon fas fa-clock"></i> &nbsp; 學習服務</a><ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow"><li><a href="https://portal.ncu.edu.tw/system/38?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon far fa-money-bill-alt"></i> &nbsp; 英文鑑定考</a></li><li><a href="https://portal.ncu.edu.tw/system/39?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon far fa-hand-lizard"></i> &nbsp; 非同步教學</a></li><li><a href="https://portal.ncu.edu.tw/system/78?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_blank" class="dropdown-item"><i class="icon fas fa-users"></i> &nbsp; 教學評量填寫</a></li></ul></li><li class="dropdown-submenu"><a href="https://portal.ncu.edu.tw/system/25" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle"><i class="icon glyphicon glyphicon-duplicate"></i> &nbsp; 生活助學服務</a><ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow"><li><a href="https://portal.ncu.edu.tw/system/dormnet?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon fas fa-network-wired"></i> &nbsp; 學生宿舍網路系統</a></li><li><a href="https://portal.ncu.edu.tw/system/42?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon fas fa-check-double"></i> &nbsp; 就學補助系統</a></li><li><a href="https://portal.ncu.edu.tw/system/82?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon fab fa-apple-pay"></i> &nbsp; 學費繳費單</a></li><li><a href="https://portal.ncu.edu.tw/system/66?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon far fa-check-square"></i> &nbsp; 學雜費繳款證明</a></li><li><a href="https://portal.ncu.edu.tw/system/134?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon glyphicon glyphicon-object-align-top"></i> &nbsp; 獎助學金暨工讀管理系統</a></li><li><a href="https://portal.ncu.edu.tw/system/142?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_blank" class="dropdown-item"><i class="icon fas fa-step-forward"></i> &nbsp; 人事系統</a></li></ul></li><li class="dropdown-submenu"><a href="https://portal.ncu.edu.tw/system/26" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle"><i class="icon fas fa-praying-hands"></i> &nbsp; 學生輔導服務</a><ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow"><li><a href="https://portal.ncu.edu.tw/system/44?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon fas fa-pen-nib"></i> &nbsp; 導師輔導資源</a></li><li><a href="https://portal.ncu.edu.tw/system/45?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon fas fa-eye"></i> &nbsp; 期中預警</a></li><li><a href="https://portal.ncu.edu.tw/system/consult?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon fas fa-user-check"></i> &nbsp; 個別諮商</a></li></ul></li><li class="dropdown-submenu"><a href="https://portal.ncu.edu.tw/system/116" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle"><i class="icon fas fa-window-restore"></i> &nbsp; 圖書館服務</a><ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow"><li><a href="https://portal.ncu.edu.tw/system/books?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon glyphicon glyphicon-book"></i> &nbsp; 借書紀錄</a></li></ul></li><li class="dropdown-submenu"><a href="https://portal.ncu.edu.tw/system/130" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle"><i class="icon far fa-folder-open"></i> &nbsp; 宿舍服務專區</a><ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow"><li><a href="https://portal.ncu.edu.tw/system/155?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon fas fa-hammer"></i> &nbsp; 修繕服務</a></li><li><a href="https://portal.ncu.edu.tw/system/132?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_blank" class="dropdown-item"><i class="icon fas fa-ribbon"></i> &nbsp; 宿舍抽籤系統</a></li><li><a href="https://portal.ncu.edu.tw/system/dormnet?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon fas fa-network-wired"></i> &nbsp; 學生宿舍網路系統</a></li></ul></li></ul></li><li class="nav-item dropdown"><a href="https://portal.ncu.edu.tw/system/162?token=tMD2Xsdn2JfhERgACvnvMGXg#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">校務行政</a><ul aria-labelledby="dropdownMenu1" class="dropdown-menu border-0 shadow"><li class="dropdown-submenu"><a href="https://portal.ncu.edu.tw/system/27" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle"><i class="icon fas fa-calendar-plus"></i> &nbsp; 總務服務</a><ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow"><li><a href="https://portal.ncu.edu.tw/system/46?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon fab fa-amazon-pay"></i> &nbsp; 撥帳系統</a></li><li><a href="https://portal.ncu.edu.tw/system/47?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon fas fa-italic"></i> &nbsp; 財產管理</a></li><li><a href="https://portal.ncu.edu.tw/system/48?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon fas fa-anchor"></i> &nbsp; 繳費管理系統</a></li></ul></li><li class="dropdown-submenu"><a href="https://portal.ncu.edu.tw/system/91" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle"><i class="icon far fa-folder-open"></i> &nbsp; 教務服務</a><ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow"><li><a href="https://portal.ncu.edu.tw/system/34?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon fas fa-asterisk"></i> &nbsp; 課務系統</a></li><li><a href="https://portal.ncu.edu.tw/system/35?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon fas fa-th-list"></i> &nbsp; 選課系統</a></li><li><a href="https://portal.ncu.edu.tw/system/37?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon fas fa-user-graduate"></i> &nbsp; 畢業審核系統</a></li><li><a href="https://portal.ncu.edu.tw/system/59?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon far fa-calendar-alt"></i> &nbsp; 學期功課表</a></li><li><a href="https://portal.ncu.edu.tw/system/45?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon fas fa-eye"></i> &nbsp; 期中預警</a></li><li><a href="https://portal.ncu.edu.tw/system/ncueeclass?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_blank" class="dropdown-item"><i class="icon fas fa-atlas"></i> &nbsp; 新 ee-class 系統</a></li><li><a href="https://portal.ncu.edu.tw/system/133?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_blank" class="dropdown-item"><i class="icon fas fa-seedling"></i> &nbsp; LMS系統</a></li><li><a href="https://portal.ncu.edu.tw/system/170?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_blank" class="dropdown-item"><i class="icon fab fa-grav"></i> &nbsp; ee-class 系統</a></li></ul></li><li class="dropdown-submenu"><a href="https://portal.ncu.edu.tw/system/28" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle"><i class="icon far fa-folder-open"></i> &nbsp; 學務服務</a><ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow"><li><a href="https://portal.ncu.edu.tw/system/42?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon fas fa-check-double"></i> &nbsp; 就學補助系統</a></li><li><a href="https://portal.ncu.edu.tw/system/61?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_blank" class="dropdown-item"><i class="icon glyphicon glyphicon-print"></i> &nbsp; 學生事務票選</a></li><li><a href="https://portal.ncu.edu.tw/system/134?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon glyphicon glyphicon-object-align-top"></i> &nbsp; 獎助學金暨工讀管理系統</a></li><li><a href="https://portal.ncu.edu.tw/system/consult?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon fas fa-user-check"></i> &nbsp; 個別諮商</a></li></ul></li><li class="dropdown-submenu"><a href="https://portal.ncu.edu.tw/system/30" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle"><i class="icon fas fa-project-diagram"></i> &nbsp; 研究發展服務</a><ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow"><li><a href="https://portal.ncu.edu.tw/system/192?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_blank" class="dropdown-item"><i class="icon fas fa-exclamation-triangle"></i> &nbsp; 研究發展系統</a></li></ul></li><li class="dropdown-submenu"><a href="https://portal.ncu.edu.tw/system/115" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle"><i class="icon fas fa-ruble-sign"></i> &nbsp; 圖書館服務</a><ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow"><li><a href="https://portal.ncu.edu.tw/system/books?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon glyphicon glyphicon-book"></i> &nbsp; 借書紀錄</a></li></ul></li><li class="dropdown-submenu"><a href="https://portal.ncu.edu.tw/system/computer-center" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle"><i class="icon fas fa-laptop"></i> &nbsp; 電算中心服務</a><ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow"><li><a href="https://portal.ncu.edu.tw/system/vdi?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_blank" class="dropdown-item"><i class="icon fas fa-tv"></i> &nbsp; 多雲整合虛擬桌面平台</a></li><li><a href="https://portal.ncu.edu.tw/system/office365?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_blank" class="dropdown-item"><i class="icon glyphicon glyphicon-th-large"></i> &nbsp; Office365 帳號申請系統</a></li><li><a href="https://portal.ncu.edu.tw/system/sdsystem?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_blank" class="dropdown-item"><i class="icon fab fa-staylinked"></i> &nbsp; 客服系統</a></li><li><a href="https://portal.ncu.edu.tw/system/56?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon fas fa-mug-hot"></i> &nbsp; 授權軟體</a></li><li><a href="https://portal.ncu.edu.tw/system/vpn?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_blank" class="dropdown-item"><i class="icon fas fa-network-wired"></i> &nbsp; VPN 服務系統</a></li><li><a href="https://portal.ncu.edu.tw/system/kms?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_blank" class="dropdown-item"><i class="icon fab fa-kickstarter-k"></i> &nbsp; KMS 認證系統</a></li><li><a href="https://portal.ncu.edu.tw/system/gsuite?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_blank" class="dropdown-item"><i class="icon fab fa-google"></i> &nbsp; GoogleApps (G Suite) 服務</a></li><li><a href="https://portal.ncu.edu.tw/system/spss-license-control?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon glyphicon glyphicon-random"></i> &nbsp; SPSS 版權控制系統</a></li><li><a href="https://portal.ncu.edu.tw/system/cloud-service?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_blank" class="dropdown-item"><i class="icon fas fa-cloud"></i> &nbsp; 中央大學電子計算機中心雲端服務</a></li></ul></li><li class="dropdown-submenu"><a href="https://portal.ncu.edu.tw/system/31" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle"><i class="icon fas fa-hotel"></i> &nbsp; 其他資源服務</a><ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow"><li><a href="https://portal.ncu.edu.tw/system/194?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_blank" class="dropdown-item"><i class="icon far fa-window-restore"></i> &nbsp; 二代電子表單簽核系統</a></li><li><a href="https://portal.ncu.edu.tw/system/54?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon glyphicon glyphicon-text-width"></i> &nbsp; 投票系統</a></li><li><a href="https://portal.ncu.edu.tw/system/62?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon fas fa-eye-slash"></i> &nbsp; 問卷調查</a></li><li><a href="https://portal.ncu.edu.tw/system/57?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon glyphicon glyphicon-print"></i> &nbsp; 印表系統</a></li><li><a href="https://portal.ncu.edu.tw/system/63?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon far fa-calendar-alt"></i> &nbsp; 會議記錄</a></li><li><a href="https://portal.ncu.edu.tw/system/82?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon fab fa-apple-pay"></i> &nbsp; 學費繳費單</a></li><li><a href="https://portal.ncu.edu.tw/system/66?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_top" class="dropdown-item"><i class="icon far fa-check-square"></i> &nbsp; 學雜費繳款證明</a></li><li><a href="https://portal.ncu.edu.tw/system/activitysys?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_blank" class="dropdown-item"><i class="icon fas fa-umbrella-beach"></i> &nbsp; 活動報名系統</a></li><li><a href="https://portal.ncu.edu.tw/system/seminarsys?token=tMD2Xsdn2JfhERgACvnvMGXg" target="_blank" class="dropdown-item"><i class="icon fab fa-dev"></i> &nbsp; 研討會系統</a></li></ul></li></ul></li></ul>
+
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="https://portal.ncu.edu.tw/lang" class="nav-link"><i class="icon fas fa-language"></i></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="https://portal.ncu.edu.tw/system/162?token=tMD2Xsdn2JfhERgACvnvMGXg#" id="settings"><i class="icon fas fa-cog"></i> <span class="caret"></span></a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="settings">
+                            <a class="dropdown-item" href="https://portal.ncu.edu.tw/about"><i class="icon fas fa-book-open"></i> &nbsp; 關於 ...</a>
+                            <div class="dropdown-divider"></div>
+                            
+                                <a class="dropdown-item" href="https://portal.ncu.edu.tw/sitemap"><i class="icon fas fa-sitemap"></i> &nbsp; 網頁地圖</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="https://portal.ncu.edu.tw/my/profile/password"><i class="icon fas fa-unlock-alt"></i> &nbsp; 修改密碼</a>
+                                <a class="dropdown-item" href="https://portal.ncu.edu.tw/my/profile/email"><i class="icon far fa-envelope"></i> &nbsp; 設定 Email</a>
+                                <div class="dropdown-divider"></div>
+                            
+                            <a class="dropdown-item" href="https://portal.ncu.edu.tw/lang/select?lang=en_US"><i class="icon fas fa-language"></i> &nbsp; English</a>
+                            <a class="dropdown-item" href="https://portal.ncu.edu.tw/lang/select?lang=zh_TW"><i class="icon fas fa-language"></i> &nbsp; 中文版</a>
+                            <div class="dropdown-divider"></div>
+                            
+                            
+                            
+                            
+                            
+                            
+                            <a class="dropdown-item" href="https://portal.ncu.edu.tw/logout"><i class="icon fas fa-sign-out-alt"></i> &nbsp; 登出<span> ( <span>106403551</span> )</span></a>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+
+            
+        
+    
+
+<div class="container-iframe">
+    <div class="row">
+        <div class="col-lg-12">
+            <iframe class="printable portal-iframe" src="./成績查詢_files/go.html" onload="javascript:resize_iframe();" id="portalFrame" style="height: 521px; width: 1095px;"><!--  iframe --></iframe>
+        </div>
+    </div>
+</div>
+<div>
+        <script src="./成績查詢_files/jquery.min.js.下載"></script>
+        <script src="./成績查詢_files/popper.min.js.下載"></script>
+        <script src="./成績查詢_files/bootstrap.min.js.下載"></script>
+        <script src="./成績查詢_files/custom.js.下載"></script>
+        
+            
+            
+                <script type="text/javascript">
+    function multilevel_on_click(e) {
+        if (!$(this).next().hasClass('show')) {
+            $(this).parents('.dropdown-menu').first().find('.show').removeClass('show');
+        }
+        var subMenu = $(this).next('.dropdown-menu');
+
+        subMenu.toggleClass('show');
+
+        $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+            $('.dropdown-submenu .show').removeClass('show');
+        });
+
+        return false;
+    }
+
+    function multilevel_dropdown() {
+        $('.dropdown-menu a.dropdown-toggle').click(multilevel_on_click);
+    }
+</script>
+            
+        
+        <script src="./成績查詢_files/footer.js.下載"></script>
+    </div>
+<script type="text/javascript">
+    /*<![CDATA[*/
+
+    var dropdownMethod = "CLICK";
+
+    function recursive_submenu(data, level, hover, lang) {
+        var list = [];
+        for (var i = 0; i < data.length; i++) {
+            if (level == 0) {
+                if (data[i].submenu.length == 0) {
+                    list.push('<li class="nav-item">');
+                    list.push('<a href="' + data[i].url + '" target="' + data[i].target + '" class="nav-link">');
+                    list.push(lang == 0 ? data[i].data.englishName : data[i].data.chineseName);
+                    list.push('</a>');
+                    list.push('</li>');
+                } else {
+                    if (hover) {
+                        list.push('<li class="nav-item dropdown">');
+                        list.push('<a href="#" class="nav-link dropdown-toggle">');
+                    } else {
+                        list.push('<li class="nav-item dropdown">');
+                        list.push('<a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">');
+                    }
+                    list.push(lang == 0 ? data[i].data.englishName : data[i].data.chineseName);
+                    list.push('</a>');
+                    if (hover) {
+                        list.push('<ul class="dropdown-menu">');
+                    } else {
+                        list.push('<ul aria-labelledby="dropdownMenu1" class="dropdown-menu border-0 shadow">');
+                    }
+                    list.push(recursive_submenu(data[i].submenu, level + 1, hover, lang));
+                    list.push('</ul>');
+                    list.push('</li>');
+                }
+            } else {
+                if (data[i].submenu.length == 0) {
+                    // console.log(JSON.stringify(data[i], null, 2));
+                    list.push('<li><a href="' + data[i].url + '" target="' + data[i].target + '" class="dropdown-item">');
+
+                    if (data[i].data.icon != null) {
+                        list.push('<i class="icon ' + data[i].data.icon + '"></i> &nbsp; ');
+                    } else {
+                        list.push('<i class="icon far fa-window-maximize"></i>');
+                    }
+                    list.push(lang == 0 ? data[i].data.englishName : data[i].data.chineseName);
+                    list.push('</a></li>');
+                } else {
+                    if (hover) {
+                        list.push('<li class="dropdown">');
+                        list.push('<a href="'
+                            + data[i].url
+                            + '" role="button" class="dropdown-item dropdown-toggle">');
+                    } else {
+                        list.push('<li class="dropdown-submenu">');
+                        list.push('<a href="'
+                            + data[i].url
+                            + '" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">');
+                    }
+
+                    if (data[i].data.icon != null) {
+                        list.push('<i class="icon ' + data[i].data.icon + '"></i> &nbsp; ');
+                    } else {
+                        list.push('<i class="icon far fa-folder"></i>');
+                    }
+
+                    list.push(lang == 0 ? data[i].data.englishName : data[i].data.chineseName);
+                    list.push('</a>');
+                    list.push('<ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow">');
+                    list.push(recursive_submenu(data[i].submenu, level + 1, hover, lang));
+                    list.push('</ul>');
+                    list.push('</li>');
+                }
+            }
+            // console.log(JSON.stringify(data[i].data, null, 2));
+        }
+        return list.join('');
+    }
+
+    function reloadTopMenu() {
+        var menuBackend = new MenuBackend();
+
+        menuBackend.retrieve(function (err, data) {
+            if (err == null) {
+                // console.log(JSON.stringify(data, null, 2));
+
+                if (dropdownMethod == 'HOVER') {
+                    $('#portal-menu').html(
+                        '<ul class="navbar-nav nav mr-auto">' +
+                        recursive_submenu(data.menuEntries, 0, true, data.languageIndex) +
+                        '</ul>'
+                    );
+                    // $($.SmartMenus.Bootstrap.init);
+                    // $.SmartMenus.Bootstrap.init();
+                    $.SmartMenus.Bootstrap.init();
+                } else {
+                    $('#portal-menu').html(recursive_submenu(data.menuEntries, 0, false, data.languageIndex));
+                }
+
+                multilevel_dropdown();
+            }
+        });
+    }
+
+    $(document).ready(function() {
+        reloadTopMenu();
+    });
+    /*]]>*/
+</script>
+
+</body></html>
