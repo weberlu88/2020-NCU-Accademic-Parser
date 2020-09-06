@@ -1,40 +1,0 @@
-BODY {    FONT: 9pt  細明體}
-TH {    FONT: 9pt 細明體}
-TD {    FONT: 9pt 細明體}
-INPUT {    FONT: 9pt 細明體}
-SELECT {    FONT: 9pt 細明體}
-TEXTAREA{    FONT: 9pt 細明體}
-SELECT {    FONT: 9pt 細明體}
-checkbox {    FONT: 9pt 細明體}
-BODY.report {    FONT: 9pt  標楷體}
-TH.report {    FONT: 9pt 標楷體}
-TD.report {    FONT: 9pt 標楷體}
-
-H6 {    PAGE-BREAK-BEFORE: always}
-TD.tbhead {    BACKGROUND-COLOR: #FFFFCC}
-TD.tbdata {    BACKGROUND-COLOR: #CFEFFF}
-TD.frmTitle { FONT: 9pt;  TEXT-ALIGN: right;BACKGROUND-COLOR: #CFEFFF}
-TD.frmData {  FONT: 9pt;  TEXT-ALIGN: left;BACKGROUND-COLOR: #E7F7FF}
-td.appTitle {FONT: 9pt;BACKGROUND-COLOR: #CFEFFF}
-td.appData {FONT: 9pt; BACKGROUND-COLOR: #FFFFCC}
-td.listTitle {FONT: 9pt;BACKGROUND-COLOR: #CFEFFF}
-td.listData {FONT: 9pt; BACKGROUND-COLOR: #FFFFCC}
-td.listData1 {FONT: 9pt; BACKGROUND-COLOR: #E7F7FF}
-td.listData2 {FONT: 9pt; BACKGROUND-COLOR: #CFEFEF}
-td.listData3 {FONT: 9pt; BACKGROUND-COLOR: #FFFFFF}
-tr.listTitle  {FONT: 9pt; BACKGROUND-COLOR:#00FFFF;color=blue}
-tr.list  {FONT: 9pt; BACKGROUND-COLOR:#6666FF; color:white}
-tr.list1  {FONT: 9pt; BACKGROUND-COLOR:#E7F7FF;}
-tr.list2  {FONT: 9pt; BACKGROUND-COLOR:#CFEFEF;}
-tr.list3  {FONT: 9pt; BACKGROUND-COLOR:#FFFFCC;}
-tr.error  {FONT: 9pt; BACKGROUND-COLOR:#FF0000;}
-td.smallData {FONT: 8pt; BACKGROUND-COLOR: #FFFFCC}
-td.smallData2 {FONT: 8pt; BACKGROUND-COLOR: #CFEFEF}
-
-.btnlink{    BACKGROUND-COLOR: silver;    BORDER-BOTTOM: black solid;    BORDER-LEFT: black solid;    BORDER-RIGHT: black solid;    BORDER-TOP: black solid;    COLOR: black;    FONT-SIZE: 12pt;    TEXT-DECORATION: none}
-a.menubar {font-weight:bold; text-decoration:none; color:yellow}
-A:link {  COLOR: #3333ff; FONT-FAMILY: "Verdana", "serif"; TEXT-DECORATION: none}
-
-A:hover {  COLOR: #004080; BACKGROUND-COLOR: yellow; FONT-FAMILY: "Verdana", "serif";TEXT-DECORATION: none}
-
-A:visited { COLOR: #3333ff; FONT-FAMILY: "Verdana", "serif"; TEXT-DECORATION: none}
